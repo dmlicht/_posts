@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "You Should Return an Empty List Instead of Null"
+title: "Return an Empty List Instead of Null"
 comments: false
 description: "These are all the commands you'll need to use vim macros.."
 ---
