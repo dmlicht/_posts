@@ -119,8 +119,6 @@ You can think of the query executing in this order:
 
 ### Joins!
 
-/* REWRITE THIS */
-
     SELECT Movies.title, Movies.id, Rooms.seats 
     From Movies
     INNER JOIN Rooms
@@ -128,7 +126,7 @@ You can think of the query executing in this order:
     WHERE seats > 75
     ORDER BY Rooms.seats DESC;
 
-Many to many /* REWRITE THIS */    
+Many to many:
 
     SELECT Actors.name, Movies.title
     FROM Actors
