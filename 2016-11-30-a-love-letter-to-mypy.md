@@ -6,8 +6,7 @@ description: ""
 keywords: ""
 ---
 
-### I love mypy
-Optional static types are a game changer for python. They have melted away my least favorite thing about my favorite language. It is HARD to keep track of what things are supposed to go in and come out of functions. Documentation can be stale or non existent (although type hints can also be non-existent, its tougher for them to be stale because your code won't pass the type check). I often find myself dropping into the debugger or running snippets of code in jupyter just to have some sense of what type of data is flowing through where. This can becomes even more challenging when you are collaborating on a large codebase.
+I love [mypy](http://mypy-lang.org/). **Optional Static Types** are a game changer for python. They have melted away my least favorite thing about my favorite language. It is HARD to keep track of what things are supposed to go in and come out of functions. Documentation can be stale or non existent (although type hints can also be non-existent, its tougher for them to be stale because your code won't pass the type check). I often find myself dropping into the debugger or running snippets of code in jupyter just to have some sense of what type of data is flowing through where. This can becomes even more challenging when you are collaborating on a large codebase.
 
 Here's an example. What if I want to make a function to tell everyone my age. It's pretty easy right?
 
@@ -31,20 +30,20 @@ Now, if someone tries to tell everyone my age without rounding down, the type ch
 That makes me feel good. Type hints allows your code to self documenting, it makes a whole class of bugs float away effortlessly.
 
 ## Let's dig in to what we can use as type hints.
-- built in types
-- classes
+- [Built In Types](#built-in-types)
+- [Classes](#classes)
 - typing classes
-- aliases
-- new types
-- callables
+- [Aliases](#aliases)
+- [NewTypes](#newtypes)
+- [Callables](#callables)
 
 ## Pycharm
 This guide is going to describe a type hinting workflow using PyCharm. This is optional. You can use the mypy tool if you don't use PyCharm. Also it may be supported in other IDE's. This is out of the scope of this post.
 
-## Built in types
-- int
-- str
-- float
+## Built In Types
+`int`  
+`str`  
+`float`  
 
 ## Classes
 Just drop in your classes, they'll work. You'll have to import them. Let's say you want to make a tree out of some leaves. I know thats not how nature works, but suspend your disbelief. You wrote your leaves already in another file.
@@ -58,7 +57,7 @@ Just drop in your classes, they'll work. You'll have to import them. Let's say y
 
 easy dang peasy. Now your program knows what leaves means. 
 
-## Hey but... what if I want to reference a class you are currently defining a type hint??
+### Hey but... what if I want to reference a class you are currently defining a type hint??
 This one confused me at first, but it's actually not bad. Just reference the type as a string. If you're using PyCharm, you'll get a slightly different error (`unresolved reference`) if something goes wrong. Let's say your tree wants to keep track of all his tree buddies, it would look like this:
 
     from typing import List
@@ -126,8 +125,6 @@ Motivation - other people were coming up with 3rd party tools for checking and d
 We type check off-line, like using a linter. We don't type check at runtime. Doing this still gives us many of the advantages of type checking while writing the code.
 
 [Mypy](http://mypy-lang.org/) - the defactor type hints typechecker
-
-
 
 ## references
 [Zulip blog post](http://blog.zulip.org/2016/10/13/static-types-in-python-oh-mypy/)
