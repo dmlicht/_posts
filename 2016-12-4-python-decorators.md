@@ -13,7 +13,7 @@ Hey! What's up? Have you ever **decorated** a function before in python? You pro
         ...
         
 
-@_@. Maybe you've seen them around in the wild unassociated with web frameworks too. What exactly do they do and how can we use them to reduce repition in your code? That's what we're going to **decorate** your brain with today.
+`@_@`. Maybe you've seen them around in the wild unassociated with web frameworks too. What exactly do they do and how can we use them to reduce repition in your code? That's what we're going to **decorate** your brain with today.
 
 ## Concepts
 `decorators` (implied by the name of the blog post)  
