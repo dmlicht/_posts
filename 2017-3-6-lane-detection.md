@@ -6,8 +6,10 @@ description: "Let's build a basic lane detection tool for people who are interes
 keywords: ""
 ---
 
+{% assign images = 'site.url' + /img/lane_detection %}
 [//]: # (Image References)
-[whole pipeline]: {{site.url}}/img/lane_detection/LaneDetectionPipeline.png
+
+[whole pipeline]: {{images}}/LaneDetectionPipeline.png
 [gray]: ./pipeline_example/gray.jpg "gray"
 [region of interest]: ./pipeline_example/region_selected.jpg "hello"
 [blurred]: ./pipeline_example/blurred.jpg
@@ -144,17 +146,6 @@ Now we can make an image to represent our lines and glue it to our copy of the o
 We just stepped through a practical image processing pipeline using opencv and python! It goes without saying,
 this is not road ready, but it's exciting to see how much we can do with a little image manipulating and line
 filtering logic. What a nice starting point. Next, we'll talk about the experience of going through the first two weeks of the Udacity Self Driving Car Nanodegree.
-
-#### Shortcomings
-
-There are some shortcomings to this approach. As we mentioned at the top - this is not using any fancy machine learning.
-The pipeline is fairly brittle. It will likely run into problems if:
-
-* We are on a very curved road
-* There are high contrast shadows on the road
-* We are already not in the center of the road
-* There are other types of markings on the road
-
 
 #### Possible Improvements
 
