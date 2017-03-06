@@ -6,10 +6,8 @@ description: "Let's build a basic lane detection tool for people who are interes
 keywords: ""
 ---
 
-# Detecting Lane Lines in Python with OpenCV
 I recently built a [lane detection tool]() for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
 The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving.
-<!--
 [//]: # (Image References)
 [whole pipeline]: {{site.url}}/img/lane_detection/LaneDetectionPipeline.png
 [gray]: ./pipeline_example/gray.jpg "gray"
@@ -20,7 +18,6 @@ The goal of the project was to detect lane lines on overhead camera video footag
 [lines]: ./pipeline_example/lines.jpg
 [final]: ./test_images_output/solidWhiteCurve.jpg
 [compare]: ./self_driving_car_begin_end.png
--->
 Basically, a tool to turn the left video into the right one:
 
 ![Compare](https://media.giphy.com/media/3oKIPDOxc9XKGqh2O4/giphy.gif)
