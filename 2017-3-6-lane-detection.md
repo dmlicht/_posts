@@ -3,7 +3,7 @@ layout: post
 title: "Detecting Lane Lines in Python with OpenCV"
 comments: false
 description: "Let's build a basic lane detection tool for people who are interested in Computer Vision and self driving cars."
-keywords: "python" "programming" "opencv" "computer vision" "image" "self driving cars"
+keywords: ""
 ---
 
 # Detecting Lane Lines in Python with OpenCV
