@@ -16,7 +16,7 @@ keywords: ""
 [canny]: {{site.url}}/{{lanes}}/canny.jpg
 [all_lines]: {{site.url}}/{{lanes}}/all_lines.jpg
 [lines]: {{site.url}}/{{lanes}}/lines.jpg
-[final]: {{site.url}}/{{lanes}}/solidWhiteCurve.jpg
+[final]: {{site.url}}/{{lanes}}/solidWhiteStraight.jpg
 
 I recently built a [lane detection tool]() for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
 The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving.
