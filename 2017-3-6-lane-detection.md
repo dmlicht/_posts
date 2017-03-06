@@ -10,14 +10,13 @@ keywords: ""
 [//]: # (Image References)
 
 [whole pipeline]: {{site.url}}/{{lanes}}/LaneDetectionPipeline.png
-[gray]: ./pipeline_example/gray.jpg "gray"
-[region of interest]: ./pipeline_example/region_selected.jpg "hello"
-[blurred]: ./pipeline_example/blurred.jpg
-[canny]: ./pipeline_example/canny.jpg
-[all_lines]: ./pipeline_example/all_lines.jpg
-[lines]: ./pipeline_example/lines.jpg
-[final]: ./test_images_output/solidWhiteCurve.jpg
-[compare]: ./self_driving_car_begin_end.png
+[gray]: {{site.url}}/{{lanes}}/gray.jpg "gray"
+[region of interest]: {{site.url}}/{{lanes}}/region_selected.jpg "hello"
+[blurred]: {{site.url}}/{{lanes}}/blurred.jpg
+[canny]: {{site.url}}/{{lanes}}/canny.jpg
+[all_lines]: {{site.url}}/{{lanes}}/all_lines.jpg
+[lines]: {{site.url}}/{{lanes}}/lines.jpg
+[final]: {{site.url}}/{{lanes}}/solidWhiteCurve.jpg
 
 I recently built a [lane detection tool]() for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
 The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving.
