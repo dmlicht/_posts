@@ -18,7 +18,7 @@ keywords: ""
 [lines]: {{site.url}}/{{lanes}}/lines.jpg
 [final]: {{site.url}}/{{lanes}}/solidWhiteRight_output.jpg
 
-I recently built a [lane detection tool]() for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
+I recently built a [lane detection tool](https://github.com/dmlicht/detect_lanes) for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
 The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving.
 
 Basically, a tool to turn the left video into the right one:
@@ -137,7 +137,7 @@ Now we can make an image to represent our lines and glue it to our copy of the o
 
     lane_annotated = cv2.addWeighted(initial_img, .8, lanes_image, 1, 0)
 
-(1) [See how I reduced my lines to just the lanes.]()
+(1) [See how I reduced my lines to just the lanes.](https://github.com/dmlicht/detect_lanes/blob/master/detect_lanes.py)
 
 ![final][final]
 
