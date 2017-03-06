@@ -6,7 +6,7 @@ description: "Let's build a basic lane detection tool for people who are interes
 keywords: ""
 ---
 
-{% assign lanes = img/lane_detection %}
+{% assign lanes = 'img/lane_detection' %}
 [//]: # (Image References)
 
 [whole pipeline]: {{site.url}}/{{lanes}}/LaneDetectionPipeline.png
