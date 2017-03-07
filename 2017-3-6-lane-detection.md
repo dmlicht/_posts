@@ -2,11 +2,19 @@
 layout: post
 title: "Detecting Lane Lines in Python with OpenCV"
 comments: false
-description: "Let's build a basic lane detection tool for people who are interested in Computer Vision and self driving cars."
+description: ""
 keywords: ""
 ---
 
 {% assign lanes = 'img/lane_detection' %}
+
+I recently built a [lane detection tool](https://github.com/dmlicht/detect_lanes) for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
+The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving.
+
+Basically, a tool to turn the left video into the right one:
+
+![Compare](https://media.giphy.com/media/3oKIPDOxc9XKGqh2O4/giphy.gif)
+
 [//]: # (Image References)
 
 [whole pipeline]: {{site.url}}/{{lanes}}/LaneDetectionPipeline.png
@@ -17,13 +25,6 @@ keywords: ""
 [all_lines]: {{site.url}}/{{lanes}}/all_lines.jpg
 [lines]: {{site.url}}/{{lanes}}/lines.jpg
 [final]: {{site.url}}/{{lanes}}/solidWhiteRight_output.jpg
-
-I recently built a [lane detection tool](https://github.com/dmlicht/detect_lanes) for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
-The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving.
-
-Basically, a tool to turn the left video into the right one:
-
-![Compare](https://media.giphy.com/media/3oKIPDOxc9XKGqh2O4/giphy.gif)
 
 In this post we'll go over how to build a basic lane detection tool for people who are interested in Computer Vision or people hoping to
 get a glimpse into the Self Driving Car Nano Degree.
@@ -54,7 +55,7 @@ We can just work with the brightness intensity of the image. (cv2 references ope
 
     grayscale_img = cv2.cvtColor(initial_image, cv2.COLOR_RGB2GRAY)
 
-![Look at all those gray scales][({{ site.url }}/img/lane_detection/gray.jpg)]
+![Look at all those gray scales][gray]
 
 #### Choose a Region Of Interest
 Set pixels outside a specified region black: This allows us to use domain knowledge to detect only lines that will likely be related to lane markings.
