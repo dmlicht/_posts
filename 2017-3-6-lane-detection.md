@@ -7,6 +7,8 @@ categories: code
 tags: computer-vision self-driving-car python opencv udacity
 ---
 
+{% assign lanes = 'img/lane_detection' %}
+
 I recently built a [lane detection tool](https://github.com/dmlicht/detect_lanes) for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
 The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving.
 
@@ -18,14 +20,14 @@ Basically, a tool to turn the left video into the right one:
 
 [//]: # (Image References)
 
-[whole pipeline]: {{site.url}}/{{lanes}}/LaneDetectionPipeline.png
-[gray]: {{site.url}}/{{lanes}}/gray.jpg "gray"
-[region of interest]: {{site.url}}/{{lanes}}/region_selected.jpg "hello"
-[blurred]: {{site.url}}/{{lanes}}/blurred.jpg
-[canny]: {{site.url}}/{{lanes}}/canny.jpg
-[all_lines]: {{site.url}}/{{lanes}}/all_lines.jpg
-[lines]: {{site.url}}/{{lanes}}/lines.jpg
-[final]: {{site.url}}/{{lanes}}/solidWhiteRight_output.jpg
+[whole pipeline]: {{site.url}}/img/lane_detection/LaneDetectionPipeline.png
+[gray]: {{site.url}}/img/lane_detection/gray.jpg "gray"
+[region of interest]: {{site.url}}/img/lane_detection/region_selected.jpg "hello"
+[blurred]: {{site.url}}/img/lane_detection/blurred.jpg
+[canny]: {{site.url}}/img/lane_detection/canny.jpg
+[all_lines]: {{site.url}}/img/lane_detection/all_lines.jpg
+[lines]: {{site.url}}/img/lane_detection/lines.jpg
+[final]: {{site.url}}/img/lane_detection/solidWhiteRight_output.jpg
 
 In this post we'll go over how to build a basic lane detection tool for people who are interested in Computer Vision or people hoping to
 get a glimpse into the Self Driving Car Nano Degree.
@@ -39,6 +41,8 @@ The pipeline has two major phases: the first is prepping for and detecting lines
 and the second is heuristically removing lines that don't seem like sensible candidates to represent lanes.
 
 ![whole pipeline]
+
+### Contents:
 
 * [Generate Candidate Lines](#generate-candidate-lines)
   * [Convert Image to Grayscale](#convert-image-to-grayscale)
