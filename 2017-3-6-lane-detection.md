@@ -3,6 +3,7 @@ layout: post
 title: "Detecting Lane Lines in Python with OpenCV"
 comments: false
 description: ""
+categories: code
 keywords: ""
 ---
 
@@ -14,6 +15,8 @@ The goal of the project was to detect lane lines on overhead camera video footag
 Basically, a tool to turn the left video into the right one:
 
 ![Compare](https://media.giphy.com/media/3oKIPDOxc9XKGqh2O4/giphy.gif)
+
+<!--more-->
 
 [//]: # (Image References)
 
