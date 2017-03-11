@@ -2,12 +2,12 @@
 layout: post
 title: "Detecting Lane Lines in Python with OpenCV"
 comments: false
-description: ""
+description: "I recently built a [lane detection tool](https://github.com/dmlicht/detect_lanes) for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity. The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving."
 categories: code
 keywords: ""
-{% assign lanes = 'img/lane_detection' %}
 ---
 
+{% assign lanes = 'img/lane_detection' %}
 
 I recently built a [lane detection tool](https://github.com/dmlicht/detect_lanes) for the first project of the [Self Driving Car Nano Degree](https://www.udacity.com/drive) program through Udacity.
 The goal of the project was to detect lane lines on overhead camera video footage taken while a person was driving.
