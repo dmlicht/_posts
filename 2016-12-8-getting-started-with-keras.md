@@ -23,7 +23,7 @@ In Keras, your first neural network can be as simple as this:
     model.compile(optimizer='rmsprop', 
       loss='categorical_crossentropy', metrics=['accuracy'])  # (5)
 
-This creates a neural network for classification with 290 inputs, a hidden layer of size 64, and an output layer of size 3.
+This creates a neural network for classification with 290 inputs, a hidden layer of size 64, and an output layer of size 3.  
 (1) Create a sequential NN. Each layer will feed into the next in a sequence.
 An alternative to a sequential network is a [Multi-input multi-output](https://keras.io/getting-started/functional-api-guide/#multi-input-and-multi-output-models).
 
@@ -151,13 +151,13 @@ l2 regularization:
     model.add(Dense(32,  activation="relu", W_regularizer=WeightRegularizer(l2=0.01), b_regularizer=WeightRegularizer(l2=0.01)))
 
 ### References
-[Keras Docs](https://keras.io/)
-[Convolutional Neural Networks for Visual Recognition Course](http://cs231n.github.io/neural-networks-1/)
+[Keras Docs](https://keras.io/)  
+[Convolutional Neural Networks for Visual Recognition Course](http://cs231n.github.io/neural-networks-1/)  
 [Efficient Object Localization Using Convolutional Networks](https://arxiv.org/pdf/1411.4280.pdf)
 
 ### Siblings
-It's worth noting that Keras isn't the only game in town. There are many frameworks designed for rapidly prototyping neural networks. Some other notable ones include:
-[TFLearn](http://tflearn.org/)
-[Neon](https://github.com/NervanaSystems/neon)
-[NoLearn](https://github.com/dnouri/nolearn)
+It's worth noting that Keras isn't the only game in town. There are many frameworks designed for rapidly prototyping neural networks. Some other notable ones include:  
+[TFLearn](http://tflearn.org/)  
+[Neon](https://github.com/NervanaSystems/neon)  
+[NoLearn](https://github.com/dnouri/nolearn)  
 [Lasagne](https://github.com/Lasagne/Lasagne)
