@@ -3,10 +3,14 @@ layout: post
 title: "Getting Started With Keras"
 comments: false
 description: ""
-keywords: ""
+category: code
+keywords: keras neural-networks machine-learning
 ---
 
-Keras is a high level framework for building neural networks on top of `Tensorflow` or `Theano`. Knowing how to use Keras (or a alternative to it) will speed up your prototyping process when working with Neural Networks. It's also a good place for beginners to start, as it doesn't require much code to get a neural network running. In Keras, your first neural network can be as simple as this:
+Keras is a high level framework for building neural networks on top of `Tensorflow` or `Theano`.
+Knowing how to use Keras (or a alternative to it) will speed up your prototyping process when working with Neural Networks.
+It's also a good place for beginners to start, as it doesn't require much code to get a neural network running.
+In Keras, your first neural network can be as simple as this:
 
     from keras.models import Sequential
     from keras.layers import Dense
@@ -20,10 +24,22 @@ Keras is a high level framework for building neural networks on top of `Tensorfl
       loss='categorical_crossentropy', metrics=['accuracy'])  # (5)
 
 This creates a neural network for classification with 290 inputs, a hidden layer of size 64, and an output layer of size 3.
-(1) Create a sequential NN. Each layer will feed into the next in a sequence. An alternative to a sequential network is a [Multi-input multi-output](https://keras.io/getting-started/functional-api-guide/#multi-input-and-multi-output-models).
-(2) Create a layer with 290 inputs and 64 outputs. The number of outputs are the only required positional argument for a `Dense` layer. You need to explicitly set your input size for the first layer in your network. Your input size is the number of features you are using. [Activation](https://keras.io/activations/) describes how you want your nodes to activate. You can use `tanh`, `softmax`, `linear` and many other options. Activations are out of the scope of this tutorial, but you can learn more [here](http://cs231n.github.io/neural-networks-1/#modeling-one-neuron).
+(1) Create a sequential NN. Each layer will feed into the next in a sequence.
+An alternative to a sequential network is a [Multi-input multi-output](https://keras.io/getting-started/functional-api-guide/#multi-input-and-multi-output-models).
+
+(2) Create a layer with 290 inputs and 64 outputs. The number of outputs are the only required positional argument for a `Dense` layer.
+You need to explicitly set your input size for the first layer in your network. Your input size is the number of features you are using.
+[Activation](https://keras.io/activations/) describes how you want your nodes to activate.
+You can use `tanh`, `softmax`, `linear` and many other options.
+Activations are out of the scope of this tutorial, but you can learn more [here](http://cs231n.github.io/neural-networks-1/#modeling-one-neuron).
+
 (3) Add a layer to your model. The order with which you call add describes the sequence of layers in your model.
-(4) Create our hidden layer. The number of inputs to this layer is implied by the number of outputs by the previous layer, so we only need to set the number of outputs we want. In this case, we want 7, because we have 7 output classes. We're using [softmax](http://cs231n.github.io/linear-classify/#softmax) as our activation because it converts our output values into a probability distribution.
+
+(4) Create our hidden layer.
+The number of inputs to this layer is implied by the number of outputs by the previous layer, so we only need to set the number of outputs we want.
+In this case, we want 7, because we have 7 output classes.
+We're using [softmax](http://cs231n.github.io/linear-classify/#softmax) as our activation because it converts our output values into a probability distribution.
+
 (5) Compile our model. This is where we can set our optimizer, loss function, callbacks, number of epochs to run and many other useful things.
 
 ### To use our model:
@@ -32,7 +48,7 @@ This creates a neural network for classification with 290 inputs, a hidden layer
     predictions = model.predict(x_test)
     
 ### Prerequisites
-This guide assumes you've used `Pandas`, `Numpy`, and `Jupyter` before. If you haven't, it might help you to check out [The python machine learning stack]
+This guide assumes you've used `Pandas`, `Numpy`, and `Jupyter` before. If you haven't, it might help you to check out [The python machine learning stack]({{site.url}}/articles/2016-11/machine-learning-toolkit-installation)
 
 ### Installing Keras
 
@@ -94,7 +110,9 @@ Dense: fully connected NN layer
 Activation - OK so you can create a whole layer object for activations and pass it into your model, but it seems like extra code. Just pass the activation you want as an argument.
 
 ### Important considerations for getting good results:
-With a framework like Keras, it's easy to quickly throw a model together. However, it can still be a challenge to get good results using a neural network. For beginners, it can be really hard to know how to improve your results after you have an inital model running.
+With a framework like Keras, it's easy to quickly throw a model together.
+However, it can still be a challenge to get good results using a neural network.
+For beginners, it can be really hard to know how to improve your results after you have an initial model running.
 
 ### scale feature values
 We already did this in our example:
